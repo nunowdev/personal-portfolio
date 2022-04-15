@@ -273,7 +273,6 @@ nav,
   bottom: 210px;
   right: 40px;
   z-index: 100;
-
   box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -355,6 +354,10 @@ nav {
 
 .fa-circle-half-stroke {
   font-size: 20px;
+}
+
+#moon {
+  font-size: 25px;
 }
 /* 
 

@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuno Alves</title>
+    <title>Nuno Alves Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/ec1a2aeda3.js"
@@ -51,14 +52,14 @@
           </li>
           <li class="nav__link click" onclick="toggleContrast()">
             <a href="#" class="nav__link--anchor"
-              ><i class="fa-solid fa-circle-half-stroke"></i
+              ><i class="fa-solid fa-moon" id="moon"></i
             ></a>
           </li>
         </ul>
       </nav>
       <header class="header">
-        <div class="header-content">
-          <div class="cube__container">
+        <div class="header-content" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+          <div class="cube__container"data-aos="fade-left" data-aos-delay="500"data-aos-duration="2000">
             <div class="cube">
               <div class="face front"></div>
               <div class="face back"></div>
@@ -94,10 +95,10 @@
           </div>
         </div>
       </header>
-      <button class="portugal__btn click" onclick="toggleModal()">
+      <button class="portugal__btn click" onclick="toggleModal()" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
         <img src="assets/portugal.svg" class="flag"></img>
       </button>
-      <button class="uk__btn click" onclick="toggleModal()">
+      <button class="uk__btn click" onclick="toggleModal()" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
         <img src="assets/united-kingdom.svg" class="flag"></img>
       </button>
       <button class="mail__btn click" onclick="toggleModal()">
@@ -220,7 +221,7 @@
       </div>
     </section>
     <section id="projects">
-      <div class="container">
+      <div class="container"  data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
         <div class="row">
           <h1 class="section__title">
             Here are some of my <span class="orange">projects</span>
@@ -328,7 +329,7 @@
     </section>
     <footer>
       <div class="container">
-        <div class="row footer_row">
+        <div class="row footer_row"  data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
           <figure>
             <img id="personal-logo" src="./assets/logo.svg" alt="" />
           </figure>
@@ -365,5 +366,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
