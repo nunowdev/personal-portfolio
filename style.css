@@ -726,11 +726,26 @@ footer {
   }
 }
 
+@media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+  .cube__container {
+    display: none;
+  }
+}
+
 /* Small phones, tablets, large smarth phones */
 
 /* Small Phones */
 
 @media (max-width: 480px) {
+  .cube__container {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
   .title {
     font-size: 52px;
   }
