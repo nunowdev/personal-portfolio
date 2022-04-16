@@ -279,9 +279,9 @@ nav,
   justify-content: center;
 } */
 
-/* .flag {
-  width: 45px;
-} */
+.flag {
+  width: 24px;
+}
 .scroll {
   position: absolute;
   bottom: 20px;
