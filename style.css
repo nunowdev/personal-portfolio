@@ -242,7 +242,7 @@ nav,
   box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
 }
 
-.portugal__btn {
+/* .portugal__btn {
   width: 70px;
   height: 70px;
   font-size: 32px;
@@ -259,9 +259,9 @@ nav,
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.uk__btn {
+/* .uk__btn {
   width: 70px;
   height: 70px;
   font-size: 32px;
@@ -277,11 +277,11 @@ nav,
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.flag {
+/* .flag {
   width: 45px;
-}
+} */
 .scroll {
   position: absolute;
   bottom: 20px;
@@ -740,13 +740,13 @@ footer {
 /* Small Phones */
 
 @media (max-width: 480px) {
-  .flag {
+  /* .flag {
     width: 30px;
   }
   .portugal__btn {
     width: 50px;
     height: 50px;
-  }
+  } */
   .mail__btn {
     width: 50px;
     height: 50px;
@@ -755,10 +755,10 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .uk__btn {
+  /* .uk__btn {
     width: 50px;
     height: 50px;
-  }
+  } */
 
   .cube__container {
     display: none;

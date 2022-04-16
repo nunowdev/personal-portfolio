@@ -7,7 +7,7 @@
     <title>Nuno Alves Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="/assets/logo nuno.png">
+    <link rel="icon" href="/assets/logo nuno.png" />
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/ec1a2aeda3.js"
@@ -24,7 +24,7 @@
     </script>
   </head>
   <body>
-    <section id="landing-page" onmousemove="moveBackground(event)">
+    <section id="landing-page">
       <nav>
         <figure>
           <img id="personal-logo" src="./assets/logo.png" alt="" />
@@ -59,8 +59,18 @@
         </ul>
       </nav>
       <header class="header">
-        <div class="header-content" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
-          <div class="cube__container"data-aos="fade-left" data-aos-delay="500"data-aos-duration="2000">
+        <div
+          class="header-content"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+        >
+          <div
+            class="cube__container"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="2000"
+          >
             <div class="cube">
               <div class="face front"></div>
               <div class="face back"></div>
@@ -71,12 +81,13 @@
             </div>
             <b class="cube__para orange"
               >If this doesn't look like a cube,<br />
-              you might have to blink once or twice :D</b
+              you might have to blink once or twice,<br />
+              perspective is a trickster :D</b
             >
           </div>
           <h1 class="title">Hey</h1>
           <h1 class="title orange">I'm Nuno.</h1>
-          <p class="header__para">
+          <p class="header__para" id="-headerpara">
             I'm a <b class="orange">Frontend Developer</b> with a strong passion
             for building web applications with great user experiences.
             <br />
@@ -96,12 +107,12 @@
           </div>
         </div>
       </header>
-      <button class="portugal__btn click" onclick="toggleModal()" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+      <!-- <button class="portugal__btn click" id="portugueseBtn" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
         <img src="assets/portugal.svg" class="flag"></img>
       </button>
-      <button class="uk__btn click" onclick="toggleModal()" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+      <button class="uk__btn click" id="englishBtn" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
         <img src="assets/united-kingdom.svg" class="flag"></img>
-      </button>
+      </button> -->
       <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
@@ -110,13 +121,13 @@
       </a>
       <div class="modal">
         <div class="modal__half modal__about">
-          <h3 class="modal__title modal__sub-title--about">
+          <h3 class="modal__title modal__sub-title--about" name="modaltitle">
             Here's a bit about me.
           </h3>
           <h4 class="modal__sub-title modal__sub-title--about">
             Front End Developer
           </h4>
-          <p class="modal__para">
+          <p class="modal__para" name="modalpara">
             I'm a 19 year-old Portuguese
             <b class="orange">frontend developer </b> with experience developing
             websites with great user experiences.
@@ -222,7 +233,12 @@
       </div>
     </section>
     <section id="projects">
-      <div class="container"  data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+      >
         <div class="row">
           <h1 class="section__title">
             Here are some of my <span class="orange">projects</span>
@@ -293,14 +309,18 @@
                 </div>
               </div>
             </li>
-            
           </ul>
         </div>
       </div>
     </section>
     <footer>
       <div class="container">
-        <div class="row footer_row"  data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+        <div
+          class="row footer_row"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+        >
           <figure>
             <img id="personal-logo" src="./assets/logo.svg" alt="" />
           </figure>
@@ -327,10 +347,18 @@
               Contact
             </a>
             <a
-              href="#"
+              href="/assets/CV portugues.pdf"
               class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
             >
-              Resume
+              Portuguese Resume
+            </a>
+            <a
+              href="/assets/CV INGLES.pdf"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+            >
+              English Resume
             </a>
           </div>
           <div class="footer__copyright">Copyright © Nuno Alves</div>
@@ -338,8 +366,8 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
