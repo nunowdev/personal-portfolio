@@ -764,8 +764,8 @@ footer {
 
   .modal {
     flex-direction: column;
-    height: 700px;
-    top: 90%;
+    height: 1100px;
+    top: 70%;
   }
   .modal__half {
     width: 100%;
