@@ -338,6 +338,11 @@ nav {
   width: 50px; /* Set a size for the logo and invert the colors */
 }
 
+#footer-logo {
+  width: 50px;
+  filter: invert(0);
+}
+
 .nav_link--list {
   display: flex; /* Set nav links to be horizontally */
 }
@@ -756,10 +761,15 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  /* .uk__btn {
-    width: 50px;
-    height: 50px;
-  } */
+
+  .modal {
+    flex-direction: column;
+    height: auto;
+    top: 70%;
+  }
+  .modal__half {
+    width: 100%;
+  }
 
   .cube__container {
     display: none;
