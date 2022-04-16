@@ -636,6 +636,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: 28px 0;
+  flex-wrap: wrap;
 }
 
 .footer__social--link,
