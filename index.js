@@ -2,7 +2,10 @@ let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
+AOS.init(); // INIT AOS PLUGIN
+
 function toggleContrast() {
+  // LIGHT/DARK MODE TOGGLER
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
     document.body.classList += " dark-theme";
@@ -12,6 +15,7 @@ function toggleContrast() {
 }
 
 function contact() {
+  // EMAIL CONTACT PLUGIN
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
   const success = document.querySelector(".modal__overlay--success");
@@ -36,6 +40,7 @@ function contact() {
 }
 
 function toggleModal() {
+  // TOGGLE CONTACT MODAL
   if (isModalOpen) {
     isModalOpen = false;
     return document.body.classList.remove("modal--open");
